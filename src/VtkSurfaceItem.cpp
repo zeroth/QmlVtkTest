@@ -8,6 +8,7 @@
 #include <vtkPolyDataMapper.h>
 #include <vtkProperty.h>
 #include <vtkExternalOpenGLRenderWindow.h>
+#include <vtkGenericOpenGLRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
 #include <vtkRenderer.h>
 #include <vtkSmartPointer.h>
@@ -96,6 +97,7 @@ private:
     vtkSmartPointer<vtkActor> cylinderActor;
     vtkSmartPointer<vtkRenderer> renderer;
     vtkSmartPointer<vtkExternalOpenGLRenderWindow> renderWindow;
+//    vtkSmartPointer<vtkGenericOpenGLRenderWindow> renderWindow;
     vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor;
     bool m_initialized;
 
